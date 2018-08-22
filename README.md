@@ -1,8 +1,5 @@
 # My-Fashion-Bag
 
-
-## Let's see some puppies!
-
 **User Story 1:** *As a user, I want to see *
 
 
