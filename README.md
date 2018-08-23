@@ -1,6 +1,6 @@
 # My-Fashion-Bag
 
-**User Story 1:** *As a user, I want to see *
+**User Story 1:** *As a user, I want to see a reasonably pretty home page*
 
 
 - In our routes, :
