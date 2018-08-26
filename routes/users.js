@@ -7,21 +7,49 @@ const router = express.Router()
 router.get('/', (req, res) => {
   db.getUsers()
     .then(users => {
-      res.render('index', {users: users})
+      res.render('index')
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
     })
 })
 
-router.get('/test', (req, res) => {
+router.get('/features', (req, res) => {
   db.getUsers()
     .then(users => {
-      res.render('test', {users: users})
+      res.send('features')
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
     })
 })
 
+router.get('/contact', (req, res) => {
+  db.getUsers()
+    .then(users => {
+      res.send('contact')
+    })
+    .catch(err => {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+})
+router.get('/login', (req, res) => {
+  db.getUsers()
+    .then(users => {
+      res.render('login')
+    })
+    .catch(err => {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+})
+
+router.get('/signup', (req, res) => {
+  db.getUsers()
+    .then(users => {
+      res.send('signup')
+    })
+    .catch(err => {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+})
 module.exports = router
