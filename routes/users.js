@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 router.get('/features', (req, res) => {
   db.getUsers()
     .then(users => {
-      res.send('features')
+      res.render('features')
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
@@ -27,7 +27,7 @@ router.get('/features', (req, res) => {
 router.get('/contact', (req, res) => {
   db.getUsers()
     .then(users => {
-      res.send('contact')
+      res.render('contact')
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
@@ -46,7 +46,7 @@ router.get('/login', (req, res) => {
 router.get('/signup', (req, res) => {
   db.getUsers()
     .then(users => {
-      res.send('signup')
+      res.render('signup')
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)

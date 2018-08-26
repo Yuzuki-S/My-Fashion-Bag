@@ -37,6 +37,8 @@ a.nav-link {
   font-family: 'Permanent Marker', cursive;
   font-size: 20px;
 }
+
+
 #signUp-tab {
   border: 1px solid;
   color: aliceblue;
@@ -48,8 +50,6 @@ a.nav-link {
  #signUp-tab:hover {
   color: #0665ca;
  }
-
-
 
 .container {
   margin:5%;
