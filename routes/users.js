@@ -10,9 +10,9 @@ router.get('/', (req, res) => {
    
 })
 
-router.get('/features', (req, res) => {
+router.get('/about', (req, res) => {
   
-      res.render('features')
+      res.render('about')
    
 })
 
