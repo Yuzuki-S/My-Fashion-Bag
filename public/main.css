@@ -60,8 +60,9 @@ a.nav-link {
 
 .labels {
   float: left;
-  margin-right: 20%;
+  margin-right: 1%;
   padding-top: 30px;
+  ;
 }
 
 
@@ -131,4 +132,9 @@ a.nav-link {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+
+.chosenItem {
+  width: 70%;
 }
