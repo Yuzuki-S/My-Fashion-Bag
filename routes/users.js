@@ -5,51 +5,50 @@ const db = require('../db')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  db.getUsers()
-    .then(users => {
+ 
       res.render('index')
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+   
 })
 
 router.get('/features', (req, res) => {
-  db.getUsers()
-    .then(users => {
+  
       res.render('features')
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+   
+})
+
+router.get('/dressmeup', (req, res) => {
+  
+      res.render('dressmeup')
+   
 })
 
 router.get('/contact', (req, res) => {
-  db.getUsers()
-    .then(users => {
+  
       res.render('contact')
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+    
 })
 router.get('/login', (req, res) => {
-  db.getUsers()
-    .then(users => {
+  
       res.render('login')
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+   
 })
 
 router.get('/signup', (req, res) => {
-  db.getUsers()
-    .then(users => {
+  
       res.render('signup')
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+    
 })
+
+router.post('/save', (req, res) => {
+  console.log(req.body.check1);  //first step is to get that invisible form submitting with all their clothing options. 
+  // //then we can do something like let choices = req.body.clothes  and then db.addItem(clothes).then((data) => {
+  //   res.render('/')
+  // })
+
+  //db.addItem(item) this will need a .then statement and render the next page. itms will add to db.
+  
+  res.send('you hit the save route')
+})
+
+
 module.exports = router
