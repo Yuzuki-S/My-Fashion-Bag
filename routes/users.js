@@ -52,7 +52,7 @@ router.post('/save', (req, res) => {
 
 router.get('/subscription/casual', (req, res) => {
   
-      res.send("Casual Fashion!")
+      res.render("casual")
     
 })
 
